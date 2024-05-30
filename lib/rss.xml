@@ -1,0 +1,186 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[EricsVault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>EricsVault</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 29 May 2024 20:04:01 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 29 May 2024 20:04:01 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[ThinkExplosive Level Editor Docs]]></title><description><![CDATA[ 
+ <br><br><br>Hello, this is the documentation for ThinkExplosive's Level Editor.<br>I recommend watching the introductory video (if you haven't already):<br>
+<a data-tooltip-position="top" aria-label="https://www.youtube.com/@longecho" rel="noopener" class="external-link" href="https://www.youtube.com/@longecho" target="_blank">ThinkExplosive Level Editor Introductory Video</a><br>
+In the video, I build a simple level. If that's your goal, the video is perfect for you!<br>There are only few limitations in the Level Editor, so try it out yourself. Most of ThinkExplosive is built from cubes that are rotated and scaled. 90% of my levels are made from cubes. Whether you want to build puzzles or parkour or something completely else is up to you.<br>This guide is organized according to the level editor workflow, from navigation to uploading to the Steam Workshop. If you encounter a problem not mentioned in the workflow, jump to the FAQ section below!<br>If your question isn't answered here, feel free to check out the <a data-tooltip-position="top" aria-label="steam://openurl/https://steamcommunity.com/app/2540550/discussions/2/" rel="noopener" class="external-link" href="steam:\\openurl\https:\\steamcommunity.com\app\2540550\discussions\2" target="_blank">Steam Discussions</a>. I will keep this documentation up to date.<br><br>Here, the basic building workflow is explained.<br><br>When you first open the Level Editor, you will be in the menu.<br><br>In the menu, you can view all your local and published levels. Use the two top buttons to switch the list. When you select a level, you can do the following:<br>
+<br>PLAY: Play the selected level.
+<br>EDIT: Edit the level.
+<br>DELETE (local levels only): Delete the level. If the level has been uploaded, it will remain in the workshop.<br>
+Warning: Once you confirm, the level cannot be restored.
+<br>PUBLISH (local levels only): Publish the level to the Steam Workshop. Note: The level will be uploaded as a new level, not updated.
+<br>EXPORT: Export the level as a file.<br>
+Note: The file does not contain an icon or any of the selected properties.
+<br>UPLOAD CHANGES (published levels only): Update the already uploaded level. Note: Changes are not copied from the local copy of your level. To edit the published level, go to Published Levels &gt; Select your Level &gt; Edit.
+<br>UNPUBLISH (published levels only): Delete the uploaded level from the workshop. The local copy will remain.
+<br>VIEW IN WORKSHOP (published levels only): Open the level in the Steam Workshop. There, you can add videos and more to the level.
+<br><br>If you haven't created a level yet, you can create a new level in the bottom right. There are three options:<br>
+<br>EMPTY TEMPLATE: If you want to start from an empty scene, choose this option.
+<br>SHOWCASE TEMPLATE: This is a level I created to demonstrate the possibilities of the Level Editor. If you want an example and maybe learn a few tricks, this is the right choice.
+<br>IMPORT: Import a level from a locally exported file.
+<br><br>Level Properties are used to describe the level. When you publish a level, this data is used for the workshop. These metadata include:<br>
+<br>NAME: Give your level a name. (Character Limit: 128)
+<br>DESCRIPTION: Describe your level. (Character Limit: 8000)
+<br>DIFFICULTY: Assign a difficulty to your level. Options are Easy, Normal, Hard, and Extreme.
+<br>TAGS: Describe your level more precisely by selecting the appropriate tags. Options are Platformer (Yes/No), Puzzle (Yes/No), and Open Areas (Yes/No).
+<br>If you want to describe your level in more detail, press View In Workshop after publishing. There, you can upload videos and screenshots.<br><br>This is an overview of the Editor. Note: There are some keyboard shortcuts for functions. You can find them in Game Settings &gt; Keybinds &gt; Level Editor.<br><br>The Transform Tools are located at the top left for selection. They are, from top to bottom:<br>
+<br>DELETE (red): Delete selected objects.
+<br>UNDO (yellow): Go back one step.
+<br>REDO (yellow): Go forward one step.
+<br>MOVE TOOL (blue): Use this tool to move objects in space. Click on an axis (arrow) and drag in the desired direction.<br>
+Note: Once you finish moving, the position snaps to the next straight line. To change this, click on the Editor Tab.
+<br>ROTATE TOOL (blue): Use this tool to rotate objects. Click on an axis (circle) and drag in the desired direction.<br>
+Note: Once you finish rotating, the rotation snaps to the next 45-degree angle. To change this, click on the Editor Tab.
+<br>SCALE TOOL (blue): Use this tool to scale objects. Click on an axis (circle) and drag in the desired direction.<br>
+Note: Once you finish scaling, the scaling snaps to the next straight size. To change this, click on the Editor Tab.
+<br>EXTEND TOOL (blue): Use this tool to stretch certain objects along sides. THIS WAS MY MAIN TOOL FOR MY LEVELS. Click on one of the points on your chosen side and drag.<br>
+Note: Once you finish extending, the scaling snaps to the next straight size. To change this, click on the Editor Tab.
+<br>DUPLICATE (green): Duplicate all selected objects.
+<br><br>The tabs are located at the bottom. I have divided them into two groups: the red and the blue tabs.<br><br>The Level Tab is for general level settings such as lighting, music, and saving:<br>
+<br>PLAY: Play (test) your level.
+<br>SAVE: Save your level. You can enable autosave in the Editor Tab.
+<br>HELP: Redirects to this documentation.
+<br>ICON: Preview of the icon. Click on it to create a new one.
+<br>SKY: Choose from two options: Outside Sky (used in the last level of the main campaign, spoiler lol) and Color Sky, then select one of the available colors below. I mostly use black.
+<br>FOG: Use the slider to change the density of the fog. You can also change its color.
+<br>SUN: Change the intensity and color of the sunlight.
+<br>AMBIENT SOUNDS: Select one of the sounds and test them by playing your level. Turning off is not possible here.
+<br>MUSIC: Choose one of the songs from my levels. Turning off is possible.
+<br><br>Here you can select one object and drag it into your scene. If you have questions about certain objects, scroll down a bit further; there's an entire section just for objects!<br><br>Here you can change the material of objects.<br>Note: Some materials do not work well with moving objects because I use a special shader with "Triplanar Mapping" for the game. But feel free to try it out!<br>Note (another one): Not all objects can change materials. Materials are mainly intended for static objects.<br><br>Here you can find general settings for the editor. If you don't find the setting you're looking for, check the Game Settings (such as Keybinds):<br>
+Menu Tab -&gt; Settings<br>
+These are the settings in the Editor Tab:<br>
+<br>MOVE CAM TO START: Moves the camera in the editor to the Start Teleporter.
+<br>MOVE CAM TO END: Moves the camera in the editor to the End Teleporter.
+<br>GRID SNAPPING: When enabled, selected objects snap to the grid after scaling or positioning.
+<br>SNAP ALL OBJECTS TO GRID: With this button, you snap ALL objects in your scene to the grid.<br>
+WARNING: There have been issues undoing this action completely. Be careful! The scene can change significantly, and adjustments are often needed.
+<br>ROTATION SNAP: When enabled, selected objects snap to the next selected degree of rotation. Change the degree or turn off.
+<br>AUTO SAVE: Automatically saves your level at the selected time interval. Change the time or turn off.
+<br>MARK PLAYER: Marks where the player has moved. Enter play mode, move the player, return to the editor, and you will see the markings.
+<br>RESET UNDO HISTORY: If you encounter problems with Undo/Redo. Deleting this data will lose all states before and after, but it may also remove potential issues.
+<br>REPORT ISSUE: Redirects you to the Steam Forum, where you can report problems or bugs in the Level Editor or the game in general.
+<br><br>The Inspector is located at the top right after you have selected objects. In the Inspector, you can make further settings for all selected objects. At the top of the Inspector, you can see the type of object selected. Below that are the settings for the selected objects. At the very bottom, you can see how many objects you have selected in total.<br>Note: If "---" appears in place of the settings, it means you have selected multiple objects of different types and therefore cannot change the settings universally.<br>If you have questions about the settings of certain objects, scroll down to the Objects section!<br><br>Here are all the objects listed with their functions and settings. They are sorted in the order they appear in the window.<br><br><br>Location where the player starts. It has some cool settings in the Inspector.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay.
+<br>Object cannot change material.
+<br>Object is not scalable.
+<br>SETTINGS<br>
+<br>Flashlight: Turn on if the player should have a flashlight.
+<br>Unlocked Bombs: Set which bombs the player has access to. You can choose between no bombs, regular bombs, and blue &amp; regular bombs.
+<br><br>Location where the player ends the level.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay.
+<br>Object cannot change material.
+<br>Object is not scalable.
+<br><br>These are the main elements of a level.<br><br>90% of my levels consist of this object. It is therefore the most important of all!<br>PROPERTIES<br>
+<br>Object is not movable during gameplay.
+<br>Object can change material.
+<br>Object is scalable.
+<br>SETTINGS<br>
+<br>No Wallrun: When enabled, the player cannot stick to this wall. Good for tubes the player should only fall through.
+<br><br>Every level has a Death Zone. It is used so that when the player falls off the map, they die at a certain depth. The player cannot see it.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay.
+<br>Object is not visible.
+<br>Object is scalable.
+<br><br>Exactly like the static object, but it can be moved during the game. However, it uses more performance.<br>PROPERTIES<br>
+<br>Object is movable during gameplay.
+<br>Object can change material.
+<br>Object is scalable.
+<br>SETTINGS<br>
+<br>Kinematic: When enabled, the object can no longer be moved. If possible, replace this object with a static one.
+<br>Gravity: Determines whether the object falls or floats in the air.
+<br>Weight: Change the weight of the object. The heavier it is, the harder it is to move.
+<br>No Wallrun: When enabled, the player cannot stick to this wall.
+<br><br>Deals 4.8% less damage than Grill Damage and makes the annoying "splash" sound.<br>Note: The object is not solid. If the player should not fall through, a solid object is required underneath.<br>PROPERTIES<br>
+<br>Object is not solid.
+<br>Object is not movable during gameplay.
+<br>Object cannot change material.
+<br>Object is scalable.
+<br><br>Deals more damage than Mud but is solid and quiet.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay.
+<br>Object cannot change material.
+<br>Object is scalable.
+<br><br>Actually, Instant Death is not so instant; it always takes some time. Therefore, either enlarge the area or place a solid object underneath.<br>Note: The object is not solid. If the player should not fall through, a solid object is required underneath.<br>PROPERTIES<br>
+<br>Object is not solid.
+<br>Object is not movable during gameplay.
+<br>Object cannot change material.
+<br>Object is scalable.
+<br><br>27 Cubes are actually 27 cubes. In my levels, I use them to reward the player, as it is quite satisfying to knock them off with bombs.<br>PROPERTIES<br>
+<br>Object is movable during gameplay.
+<br>Object cannot change material.
+<br>Object is scalable.
+<br><br>Exactly like the physics object, only... a sphere.<br>PROPERTIES<br>
+<br>Object is movable during gameplay.
+<br>Object can change material.
+<br>Object is scalable.
+<br>SETTINGS<br>
+<br>Kinematic: When enabled, the object can no longer be moved.
+<br>Gravity: Determines whether the object falls or floats in the air.
+<br>Weight: Change the weight of the object. The heavier it is, the harder it is to move.
+<br>No Wallrun: When enabled, the player cannot stick to this wall.
+<br><br>If you want to explain or tell the player something, use this board.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay.
+<br>Object cannot change material.
+<br>Object is not scalable.
+<br>SETTINGS<br>
+<br>Text: Here you can write the content of the text.
+<br>Font Size: Change the size of the font.
+<br><br>Here are all the puzzle and interactive elements of my game.<br><br>These open doors of the same color.<br>PROPERTIES<br>
+<br>Object reacts to bombs
+<br>Object is not movable during gameplay
+<br>Object cannot change material
+<br>Object is not scalable
+<br>SETTINGS<br>
+<br>Time: How long it takes before it shuts off again.
+<br><br>These open doors of the same color but have a small wall around them. They are hard to miss and attract blue bombs within a radius.<br>PROPERTIES<br>
+<br>Object reacts to bombs
+<br>Object is not movable during gameplay
+<br>Object cannot change material
+<br>Object is not scalable
+<br>SETTINGS<br>
+<br>Time: How long it takes before it shuts off again.
+<br><br>This is one of those doors. Not much else to say.<br>PROPERTIES<br>
+<br>Object opens when the Stab of the same color is active
+<br>Object is not movable during gameplay
+<br>Object cannot change material
+<br>Object is scalable
+<br><br>Bounces the player and all physical objects into the air. Be careful with the force.<br>Note: The height of the Force Pad greatly affects the force. See the blue marked area!<br>PROPERTIES<br>
+<br>Object is not movable during gameplay
+<br>Object cannot change material
+<br>Object is scalable
+<br>SETTINGS<br>
+<br>Force: The strength of the bounce. The height of the object can multiply this value.
+<br><br>Shoots the player and all physical objects in the direction of the blue area through itself. RB stands for "red" and "blue".<br>Note: (If I remember correctly) the scaling of the RB-Mirror affects the force of the shooting. See the blue marked area!<br>PROPERTIES<br>
+<br>Object is not movable during gameplay
+<br>Object cannot change material
+<br>Object is scalable
+<br><br>Activates all Temporal Lights within its radius.<br>PROPERTIES<br>
+<br>Object is movable during gameplay (You can change this)
+<br>Object cannot change material
+<br>Object is scalable
+<br>SETTINGS<br>
+<br>Use Physics: If disabled, the object can't be moved during the game.
+<br>Active on Start: If enabled, the Temporal Light will activate itself when the player starts to play.
+<br>Radius: Defines the area in which the Temporal Lights will be activated. All Temporal Lights within the blue area will be activated.
+<br><br><br>Both emit light.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay
+<br>Object cannot change material
+<br>Object is not scalable
+<br>SETTINGS<br>
+<br>Strength: Defines how strong the light glows.
+<br>Range: Defines how far the light glows.
+<br><br>Props include chairs, stairs, umbrellas, vents, and tables. You can't do much with them; they are just used to fill your world.<br>PROPERTIES<br>
+<br>Some can be moved during gameplay, but not all.
+<br>Some can change materials, but not all.
+<br>Some can be scaled, but not all.
+<br><br>I love hills. They can integrate seamlessly into any texture, and you can scale and connect them as needed.<br>PROPERTIES<br>
+<br>Object is not movable during gameplay
+<br>Object can change material
+<br>Object is scalable
+<br><br>Q: I have a problem with the Level Editor that is not mentioned in the documentation. What should I do?<br>
+A: Report the problem. You can do this via Editor -&gt; Report Issue or directly through Steam: Library -&gt; ThinkExplosive -&gt; Discussions -&gt; Level Editor / Workshop.<br>Q: I have made changes to the local version of my level. How can I update the published version on Steam?<br>
+A: Local and published levels are two different copies. To transfer changes from a local level to a published level, export the local level by going to Local Levels -&gt; (Select Level) -&gt; Export. Then, you can edit a published level by going to Published Levels -&gt; (Select Level) -&gt; Edit. Go to Menu -&gt; Import (Replace) and select the exported level. To upload the changes, go back to Published Levels -&gt; (Select Level) -&gt; Upload Changes.<br>Q: Undo and Redo seem to be broken. How can I fix that?<br>
+A: Most of the time, it helps to go to Editor Tab -&gt; Reset Undo History. I try my best to fix problems, so if you can reproduce the issue, please report it. Your help would be greatly appreciated.<br>Q: I can't find one of my Teleporters or I've lost orientation. How can I get back?<br>
+A: You can teleport to both the start and end teleporter by going to Editor Tab -&gt; Move Cam to Start / Finish. If this does not help and you do not want to lose your level, export the level and send it to me via Steam Discussions. The exported file is human-readable, and I can help you get back to where you need to be.<br>Q: My level is somehow broken / there are errors when opening it. How do I fix that?<br>
+A: Export the level and send it to me via Steam Discussions. The exported files are human-readable, and I will do my best to fix it. If you can reproduce the issue, please also report it. Your help would be greatly appreciated.<br>Q: How can I customize my published level in more detail?<br>
+A: Go to Published Levels -&gt; (Select level) -&gt; View on Steam. There, you can edit everything. You can even add videos, but they will only be visible on Steam.<br>Q: How can I make a custom icon for my level?<br>
+A: If the icon generator (Level Tab -&gt; Create Icon) is not sufficient, you can replace the PNG in the local files. You can find them under AppData\LocalLow\LongEcho\ThinkExplosive\LocalLevels. Each level has its own folder with all the data in it.<br>Q: How can I turn the flashlight on / change which bombs the player has access to?<br>
+A: Both settings are a bit hidden. You will need to select the Start Teleporter and look in the Inspector. There, you can also disable bombs completely.<br>Q: How can I disable ambient sounds?<br>
+A: I decided to disable this function, so there is no moment where you hear nothing. Try the different options, and you might find something that fits better. If you have a strong argument for why this should be an option, please write it in the Steam Discussions.<br>Q: I don't know what level I should build. How can I get ideas?<br>
+A: Play other levels from the workshop. Think about what you like about them and what is missing. If you have an empty project, start by trying to build the level you liked from memory. If something was missing, add that. If not, continue to build and make it like a part 2. Once you get past the blank page phase, you will find it much easier.<br>For more tips, check out the demo level I created!]]></description><link>ThinkExplosive\TEDocs.html</link><guid isPermaLink="false">ThinkExplosive/TEDocs.md</guid><pubDate>Wed, 29 May 2024 20:03:57 GMT</pubDate></item></channel></rss>
